@@ -16,7 +16,7 @@ create schema if not exists app;
 do $$
 begin
   if not exists (select 1 from pg_roles where rolname = 'prepmate_api') then
-    create role prepmate_api nologin noinherit;
+    create role prepmate_api login noinherit;
   end if;
 end
 $$;
