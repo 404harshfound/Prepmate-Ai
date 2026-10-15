@@ -6,9 +6,7 @@ import { PageStatus } from "../components/PageStatus";
 import { Wordmark } from "../components/Wordmark";
 import {
   api,
-  ApiError,
   type Answer,
-  type Question,
   type RoundType,
   type Session,
 } from "../lib/api";
